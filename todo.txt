@@ -1,0 +1,7 @@
+- Box Shadow variable
+- border variable?
+- Make a reusable card
+- Make a reusable modal
+- Perhaps make a box component like most other design systems have. I just don't like the idea of extending classes past React.Component.
+- Maybe make it so there's an array of values for sizes, etc. to correspond to different screens. 
+- What are the goals of our code design standards?
