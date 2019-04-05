@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 import theme from '../../Theme'
 
-const { fontSizes, colors, fonts } = theme
+const { fontSizes, colors, fonts, spacingSizes } = theme
 
 export const buttonModes = {
   primary: css`
@@ -93,6 +93,7 @@ export const StyledButton = styled.button`
   ${props => buttonModes[props.mode]};
   ${props => buttonSizes[props.size]};
   color: ${props => colors[props.color]};
+  ${spacingSizes};
   cursor: pointer;
   outline: none;
   text-transform: uppercase;

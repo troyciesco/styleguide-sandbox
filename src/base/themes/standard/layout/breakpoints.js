@@ -2,7 +2,7 @@
 // We currently use pixel values, but ems work too.
 
 export const sizes = {
-    xs: '414px',
+    xs: '0px',
     sm: '768px',
     md: '960px',
     lg: '1040px',
