@@ -57,7 +57,7 @@ export const FlexColStyles = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* flex-basis: ${props => columnSizes[props.xs]}; */
+    align-items: ${props => props.alignItems};
     ${spacingSizes}
     ${props => props.xs && screenSizes.xs}
     ${props => props.sm && screenSizes.sm}
@@ -70,7 +70,7 @@ export const FlexColStyles = styled.div`
 
 export const FlexRowStyles = styled.section`
     display: flex;
-    justify-content: space-around;
+    justify-content: ${props => props.justifyContent};
     flex-wrap: wrap;
     ${spacingSizes}
 `

@@ -31,3 +31,11 @@ FlexCol.propTypes = {
         xl: PropTypes.oneOf(ColumnSizes),
         xxl: PropTypes.oneOf(ColumnSizes),
     };
+
+FlexCol.defaultProps = {
+  alignItems: "center"
+}
+
+FlexRow.defaultProps = {
+    justifyContent: "space-around"
+}

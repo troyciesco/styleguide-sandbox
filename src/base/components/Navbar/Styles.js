@@ -36,6 +36,10 @@ export const NavbarStyles = styled.header`
     top: 0;
     width: 100%;
   `}
+
+  ${props => props.boxShadow && css `
+    box-shadow: 0 10px 40px ${colors.primaryS50}88;
+  `}
 `
 
 export const NavbarItemStyles = styled.li`

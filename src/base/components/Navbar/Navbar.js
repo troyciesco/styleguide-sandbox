@@ -31,7 +31,8 @@ class Navbar extends Component {
       isFixed: this.props.fixed,
       isTop: true,
       bg: this.props.topBg || this.props.bg,
-      scrollBg: this.props.scrollBg
+      scrollBg: this.props.scrollBg,
+      boxShadow: false
 		}
   }
 
@@ -45,8 +46,10 @@ class Navbar extends Component {
         }
         if (!isTop) {
           this.setState({bg: this.state.scrollBg})
+          this.setState({ boxShadow: true })
         } else {
           this.setState({bg: this.props.topBg || this.props.bg})
+          this.setState({ boxShadow: false })
         }
       }
     })
@@ -71,7 +74,7 @@ class Navbar extends Component {
 
     return (
       <>
-      <NavbarStyles drawerClickHandler={this.drawerToggleClickHandler} {...this.props} bg={this.state.bg} scrollBg={this.props.scrollBg}>
+      <NavbarStyles drawerClickHandler={this.drawerToggleClickHandler} {...this.props} bg={this.state.bg} scrollBg={this.props.scrollBg} boxShadow={this.state.boxShadow}>
               <NavbarToggle>
                 <DrawerToggleButton click={this.drawerToggleClickHandler} />
               </NavbarToggle>
