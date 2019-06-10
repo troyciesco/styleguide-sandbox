@@ -3,7 +3,7 @@ import PropTypes, { instanceOf } from 'prop-types'
 import styled from 'styled-components'
 import { withCookies, Cookies } from 'react-cookie'
 import { CookieDialogStyles, CookieDialogClose, CookieDialogHeader, CookieDialogFooter, CookieDialogBody, cookieDialogColors } from './Styles'
-import { Paragraph } from '../Paragraph'
+import { Text } from '../Text'
 import { Button } from '../Button'
 
 const CookieDialogTrigger = styled.div`
@@ -61,8 +61,8 @@ class Dialog extends Component {
         <CookieDialogClose onClick={this.CookieDialogToggleClickHandler}>&times;</CookieDialogClose>
         </CookieDialogHeader>
         <CookieDialogBody bg={this.props.bg}>
-          <Paragraph size="sm" pb="xs" center>This site uses cookies.</Paragraph>
-          <Paragraph size="sm" pb="xs" color="info" center><a href={this.props.cookiePolicy}>Learn more here.</a></Paragraph>
+          <Text size="sm" pb="xs" center>This site uses cookies.</Text>
+          <Text size="sm" pb="xs" color="info" center><a href={this.props.cookiePolicy}>Learn more here.</a></Text>
         </CookieDialogBody>
         {footer}
         </CookieDialogStyles>

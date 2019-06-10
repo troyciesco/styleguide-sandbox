@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Wrapper, FlexRow, Button, Modal, Paragraph, Card } from '../base'
+import { Heading, Wrapper, FlexRow, Button, Modal, Text, Card } from '../base'
 
 
 const TeamInfos = [
@@ -17,7 +17,7 @@ const Cards = () => {
       header={<Heading>{teamInfo.title}</Heading>} 
       footer={<Heading>{teamInfo.subtitle}</Heading>}
       >
-        <Paragraph>{teamInfo.content}</Paragraph>
+        <Text>{teamInfo.content}</Text>
       </Modal>
     )
   )
@@ -49,7 +49,7 @@ const Elements = () => {
         </FlexRow>
         <FlexRow pt="md">
             <Modal trigger={trigger} header={header} footer={footer} bg="warning" bgHeader="warning" bgFooter="warning">
-              <Paragraph pl="md">this is a test of the trigger.</Paragraph>
+              <Text pl="md">this is a test of the trigger.</Text>
             </Modal>
         </FlexRow>
         <Heading size="lg" center pt="md">Card</Heading>
