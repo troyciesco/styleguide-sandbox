@@ -8,7 +8,6 @@ export const navColors = {
   };
 
 export const SidebarStyles = styled.div`
-  width: 350px;
 `
 
 export const SidebarNavStyles = styled.nav`
@@ -18,7 +17,7 @@ export const SidebarNavStyles = styled.nav`
     background: ${props => navColors[props.bg]};
     top: 0;
     left: 0;
-    width: 280px;
+    width: 250px;
     z-index: 200;
     transform: translateX(-100%);
     transition: transform 0.3s ease-out;
