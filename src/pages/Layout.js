@@ -1,12 +1,12 @@
-import React from 'react'
-
-
+import React from "react"
+import { Box } from "../base"
 
 const Layout = () => {
-  return (
-<div>Page for layout related components
-</div>
-  )
+	return (
+		<div style={{ height: "100vh" }}>
+			<Box></Box>
+		</div>
+	)
 }
 
 export { Layout }
