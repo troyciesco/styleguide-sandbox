@@ -3,8 +3,9 @@ import styled from "styled-components"
 import theme from "../../Theme"
 
 import { buttonStyles } from "../Button/Styles"
+import { FlexStyles } from "../Flex/Styles"
 
-const { spacingSizes, borderOptions, elevations } = theme
+const { spacingSizes, borderOptions, animations, elevations } = theme
 
 export const boxElevations = {
 	...elevations,
@@ -12,6 +13,8 @@ export const boxElevations = {
 // Everything related to specific element styles has to come first, otherwise editing stuff later won't work
 const boxBase = styled.span`
 	${props => props.as === "button" && buttonStyles};
+	${props => props.flex && FlexStyles};
+	${props => animations[props.animation]};
 	align-content: ${props => props.alignContent};
 	align-items: ${props => props.alignItems};
 	align-self: ${props => props.alignSelf};
@@ -28,10 +31,18 @@ const boxBase = styled.span`
 	background: ${props => props.bg};
 	background: ${props => props.bg};
 	background: ${props => props.bg};
-	height: ${props => props.height};
-	width: ${props => props.width};
 	box-shadow: ${props => boxElevations[props.elevation]};
+	color: ${props => props.color};
+	display: ${props => props.display};
+	height: ${props => props.height};
+	justify-content: ${props => props.justifyContent};
+	text-align: ${props => props.textAlign};
+	width: ${props => props.width};
 	z-index: ${props => props.zIndex};
+	top: ${props => props.top};
+	right: ${props => props.right};
+	bottom: ${props => props.bottom};
+	left: ${props => props.left};
 	${spacingSizes};
 	${borderOptions};
 `

@@ -7,7 +7,7 @@ export const buttonModes = {
 	primary: css`
 		background-color: ${colors.primary};
 		border: 1px solid ${colors.primary};
-		color: ${colors.light};
+		color: ${colors.white};
 
 		&:hover {
 			background-color: ${colors.primaryS20};
@@ -18,7 +18,7 @@ export const buttonModes = {
 	secondary: css`
 		background-color: ${colors.secondary};
 		border: 1px solid ${colors.secondary};
-		color: ${colors.light};
+		color: ${colors.white};
 
 		&:hover {
 			background-color: ${colors.secondaryS20};
@@ -29,7 +29,7 @@ export const buttonModes = {
 	success: css`
 		background-color: ${colors.success};
 		border: 1px solid ${colors.success};
-		color: ${colors.light};
+		color: ${colors.white};
 
 		&:hover {
 			background-color: ${colors.successS20};
@@ -51,7 +51,7 @@ export const buttonModes = {
 	danger: css`
 		background-color: ${colors.danger};
 		border: 1px solid ${colors.danger};
-		color: ${colors.light};
+		color: ${colors.white};
 
 		&:hover {
 			background-color: ${colors.dangerS20};
@@ -62,7 +62,7 @@ export const buttonModes = {
 	info: css`
 		background-color: ${colors.info};
 		border: 1px solid ${colors.info};
-		color: ${colors.light};
+		color: ${colors.white};
 
 		&:hover {
 			background-color: ${colors.infoS20};

@@ -3,11 +3,12 @@ import PropTypes from "prop-types"
 
 import { elements, boxElevations } from "./Styles"
 
-export const Box = ({ children, bg, height, width, as, src, elevation, ...props }) => {
+export const Box = ({ children, cn, bg, height, width, as, src, elevation, ...props }) => {
 	const Element = elements[`${as}`]
 	return (
 		<Element
 			as={as}
+			className={cn}
 			bg={bg}
 			height={height}
 			width={width}
