@@ -41,7 +41,9 @@ const Elements = () => {
 				Buttons
 			</Heading>
 			<FlexRow pt="md">
-				<Button mode="primary">Primary</Button>
+				<Button mode="primary" bor="solid" elevation="4">
+					Primary
+				</Button>
 				<Button mode="secondary">Secondary</Button>
 				<Button mode="success">Success</Button>
 				<Button mode="warning">Warning</Button>
@@ -93,7 +95,15 @@ const Elements = () => {
 				Box
 			</Heading>
 			<FlexRow pt="md" pb="lg">
-				<Box as="div" height="100px" width="100px" bg="lightblue" />
+				<Box
+					as="div"
+					radius="50%"
+					elevation="3"
+					bor="solid"
+					height="100px"
+					width="100px"
+					bg="lightblue"
+				/>
 			</FlexRow>
 		</Wrapper>
 	)

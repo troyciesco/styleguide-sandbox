@@ -1,5 +1,6 @@
 import colors from "./color/colors"
 import { semanticColors, typographicColors, buttonColors } from "./color/colorVariables"
+import borderOptions from "./borders/borders"
 import elevations from "./elevations/elevations"
 import fonts from "./fonts/fonts"
 import fontSizes from "./fonts/fontSizes"
@@ -13,6 +14,7 @@ const standard = {
 	semanticColors,
 	typographicColors,
 	buttonColors,
+	borderOptions,
 	elevations,
 	fonts,
 	fontSizes,

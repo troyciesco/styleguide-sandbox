@@ -7,11 +7,11 @@ export const Box = ({ children, bg, height, width, as, src, elevation, ...props 
 	const Element = elements[`${as}`]
 	return (
 		<Element
+			as={as}
 			bg={bg}
 			height={height}
 			width={width}
 			src={src}
-			as={as}
 			elevation={elevation}
 			{...props}
 		>
@@ -30,5 +30,4 @@ Box.propTypes = {
 
 Box.defaultProps = {
 	as: "span",
-	elevation: "0",
 }
