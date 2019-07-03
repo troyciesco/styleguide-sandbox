@@ -1,10 +1,10 @@
-import React from 'react'
-import SectionStyles from './Styles'
+import React from "react"
+import { Box } from "../Box"
 
-export const Section = ({ children, id, ...others}) => {
-  return (
-    <SectionStyles id={id} {...others}>
-      {children}
-    </SectionStyles>
-  )
+export const Section = ({ children, id, ...props }) => {
+	return (
+		<Box as="section" id={id} {...props}>
+			{children}
+		</Box>
+	)
 }
