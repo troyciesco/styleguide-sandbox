@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading, Wrapper, FlexRow, Button, Modal, Text, Card, Box } from "../base"
+import { Heading, Wrapper, Flex, FlexRow, Button, Modal, Text, Card, Box } from "../base"
 
 const TeamInfos = [
 	{
@@ -40,15 +40,17 @@ const Elements = () => {
 			<Heading size="lg" center pt="md">
 				Buttons
 			</Heading>
-			<FlexRow pt="md">
-				<Button mode="primary">Primary</Button>
+			<Flex dir="col" pt="md">
+				<Button mode="primary" bor="solid" elevation="4">
+					Primary
+				</Button>
 				<Button mode="secondary">Secondary</Button>
 				<Button mode="success">Success</Button>
 				<Button mode="warning">Warning</Button>
 				<Button mode="danger">Danger</Button>
 				<Button mode="info">Info</Button>
 				<Button disabled>Disabled</Button>
-			</FlexRow>
+			</Flex>
 			<FlexRow pt="md">
 				<Button mode="primary" color="black" hoverColor="white" empty>
 					Empty
@@ -93,7 +95,16 @@ const Elements = () => {
 				Box
 			</Heading>
 			<FlexRow pt="md" pb="lg">
-				<Box as="div" height="100px" width="100px" bg="lightblue" />
+				<Box
+					as="div"
+					rad="50%"
+					elevation="3"
+					bor="solid"
+					height="100px"
+					width="100px"
+					bg="lightblue"
+				/>
+				<Box as="div" animation="rotate" elevation="3" bor="solid" height="100px" width="100px" bg="lightblue" />
 			</FlexRow>
 		</Wrapper>
 	)
