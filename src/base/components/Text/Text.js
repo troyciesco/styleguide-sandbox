@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { StyledParagraph, paragraphSizes, paragraphColors } from './Styles'
 
-export const Paragraph = ({ children, color, noMargin, size, pad, pt, pr, pb, pl, mar, mt, mr, mb, ml, ...others }) => (
+export const Text = ({ children, color, noMargin, size, pad, pt, pr, pb, pl, mar, mt, mr, mb, ml, ...others }) => (
   <StyledParagraph
     color={color}
     noMargin={noMargin}
@@ -28,7 +28,7 @@ export const ParagraphSizes = Object.keys(paragraphSizes)
 export const ParagraphColors = Object.keys(paragraphColors)
 // export const SpacingSizes = Object.keys(theme.spacingSizes);
 
-Paragraph.propTypes = {
+Text.propTypes = {
   /** @ignore */
   children: PropTypes.node,
   /** Color of the Paragraph. Options are 'dark', 'medium', 'light', 'accent', 'success', and 'danger' */
@@ -51,7 +51,7 @@ Paragraph.propTypes = {
   // ml: PropTypes.oneOf(SpacingSizes),
 }
 
-Paragraph.defaultProps = {
+Text.defaultProps = {
   color: 'dark',
   size: 'md',
 }

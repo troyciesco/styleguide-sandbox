@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Paragraph } from '../base'
+import { Heading, Text } from '../base'
 
 const Typography = () => {
   return (
@@ -12,11 +12,11 @@ const Typography = () => {
         <Heading level={4} size="md" center pt="sm" pb="sm">medium is 3.2rem</Heading>
         <Heading level={5} size="sm" center pt="sm" pb="sm">small is 2.4rem</Heading>
         <Heading level={6} size="xs" center pt="sm" pb="sm">xsmall is 1.8rem</Heading>
-        <Paragraph size="lg" center pt="sm" pb="sm">Level and size will not always correspond perfectly to each other. Level is a matter of semantics; size is a matter of style/design.</Paragraph>
+        <Text size="lg" center pt="sm" pb="sm">Level and size will not always correspond perfectly to each other. Level is a matter of semantics; size is a matter of style/design.</Text>
 
-        <Paragraph size="lg" color="success" center>p: Roboto size: large</Paragraph>
-        <Paragraph size="md" center>p: Roboto size: medium</Paragraph>
-        <Paragraph size="sm" center>p: Roboto size: small</Paragraph>
+        <Text size="lg" color="success" center>p: Roboto size: large</Text>
+        <Text size="md" center>p: Roboto size: medium</Text>
+        <Text size="sm" center>p: Roboto size: small</Text>
 
     </div>
   )

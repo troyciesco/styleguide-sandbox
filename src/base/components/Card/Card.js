@@ -1,7 +1,7 @@
 import React from 'react'
 import { CardStyles, CardHeaderStyles, CardContentStyles, CardFooterStyles } from './Styles'
 import { Heading } from '../Heading'
-import { Paragraph } from '../Paragraph'
+import { Text } from '../Text'
 
 export const Card = ({children, title, subtitle, content, ...props}) => {
     let header, footer
@@ -21,7 +21,7 @@ export const Card = ({children, title, subtitle, content, ...props}) => {
         <CardContentStyles>
             <Heading size="sm" pad="xxs">{title}</Heading>
             <Heading size="xs" pad="xxs">{subtitle}</Heading>
-            <Paragraph pad="xxs">{content}</Paragraph>
+            <Text pad="xxs">{content}</Text>
         </CardContentStyles>
         <CardFooterStyles>
             {footer}
