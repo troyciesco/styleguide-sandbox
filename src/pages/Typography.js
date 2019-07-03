@@ -33,13 +33,16 @@ const Typography = () => {
 				semantics; size is a matter of style/design.
 			</Text>
 
-			<Text font="lg3" color="success" center>
+			<Text font="41px" color="success" center>
+				p: Roboto size: xl
+			</Text>
+			<Text font="lg" color="success" center>
 				p: Roboto size: large
 			</Text>
-			<Text font="md4" center>
+			<Text font="md" center>
 				p: Roboto size: medium
 			</Text>
-			<Text font="sm5" center>
+			<Text font="sm" center>
 				p: Roboto size: small
 			</Text>
 		</div>

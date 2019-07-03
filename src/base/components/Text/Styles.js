@@ -11,9 +11,11 @@ const { typography, spacingSizes, colors } = theme
 // }
 
 const fontSizes = {
-	sm: "2.0rem",
-	md: "4.0rem",
-	lg: "6.0rem",
+	xs: "1.2rem",
+	sm: "1.6rem",
+	md: "2.0rem",
+	lg: "2.4rem",
+	xl: "2.8rem",
 }
 
 export const paragraphColors = {
@@ -25,8 +27,14 @@ export const paragraphColors = {
 export const StyledParagraph = styled.p`
 	font-family: "Roboto", Helvetica, sans-serif;
 	color: ${props => paragraphColors[props.color]};
-	font-size: ${props => fontSizes[props.font.substr(0, 2)]};
-	font-weight: ${props => (props.font.length > 2 ? `${props.font.substr(2)}00` : props.fontWeight)};
+	font-size: ${props =>
+		(props.font.length <= 3) & !props.font.endsWith("px")
+			? fontSizes[props.font.substr(0, 2)]
+			: props.font};
+	font-weight: ${props =>
+		(props.font.length > 2) & !props.font.endsWith("px")
+			? `${props.font.substr(2)}00`
+			: props.fontWeight};
 	${props => props.noMargin && "margin: 0"};
 	${props => props.noMaxWidth && "max-width: none"};
 	${spacingSizes};

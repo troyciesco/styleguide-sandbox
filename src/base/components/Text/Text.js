@@ -69,5 +69,5 @@ Text.propTypes = {
 
 Text.defaultProps = {
 	color: "dark",
-	size: "md",
+	font: "md",
 }
