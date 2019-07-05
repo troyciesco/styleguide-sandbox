@@ -102,9 +102,17 @@ const Elements = () => {
 					bor="solid"
 					height="100px"
 					width="100px"
+					bgColor="t:green:t"
+				/>
+				<Box
+					as="div"
+					animation="rotate"
+					elevation="3"
+					bor="solid"
+					height="100px"
+					width="100px"
 					bg="lightblue"
 				/>
-				<Box as="div" animation="rotate" elevation="3" bor="solid" height="100px" width="100px" bg="lightblue" />
 			</FlexRow>
 		</Wrapper>
 	)

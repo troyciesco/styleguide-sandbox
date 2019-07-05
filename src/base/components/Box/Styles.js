@@ -4,48 +4,75 @@ import theme from "../../Theme"
 
 import { buttonStyles } from "../Button/Styles"
 import { FlexStyles } from "../Flex/Styles"
+import {
+	bg,
+	bgColor,
+	bgAttachment,
+	bgBlendMode,
+	bgClip,
+	bgImg,
+	bgOrigin,
+	bgPosition,
+	bgRepeat,
+	bgSize,
+	alignContent,
+	alignItems,
+	alignSelf,
+	color,
+	display,
+	height,
+	minHeight,
+	overflow,
+	justifyContent,
+	position,
+	textAlign,
+	width,
+	zIndex,
+	top,
+	right,
+	bottom,
+	left,
+} from "../../CssProps"
 
 const { spacingSizes, borderOptions, animations, elevations } = theme
 
 export const boxElevations = {
 	...elevations,
 }
-// Everything related to specific element styles has to come first, otherwise editing stuff later won't work
+
+/* Everything related to specific element styles has to come first, otherwise editing stuff later wont work */
 const boxBase = styled.span`
 	${props => props.as === "button" && buttonStyles};
 	${props => props.flex && FlexStyles};
 	${props => animations[props.animation]};
-	align-content: ${props => props.alignContent};
-	align-items: ${props => props.alignItems};
-	align-self: ${props => props.alignSelf};
-	background: ${props => props.bg};
-	background-attachment: ${props => props.bgAttachment};
-	background-blend-mode: ${props => props.bgBlendMode};
-	background-clip: ${props => props.bgClip};
-	background-color: ${props => props.bgColor};
-	background-image: ${props => props.bgImg};
-	background-origin: ${props => props.bgOrigin};
-	background-position: ${props => props.bgPosition};
-	background-repeat: ${props => props.bgRepeat};
-	background-size: ${props => props.bgSize};
-	background: ${props => props.bg};
-	background: ${props => props.bg};
-	background: ${props => props.bg};
 	box-shadow: ${props => boxElevations[props.elevation]};
-	color: ${props => props.color};
-	display: ${props => props.display};
-	height: ${props => props.height};
-	min-height: ${props => props.minHeight};
-	overflow: ${props => props.overflow};
-	justify-content: ${props => props.justifyContent};
-	position: ${props => props.position};
-	text-align: ${props => props.textAlign};
-	width: ${props => props.width};
-	z-index: ${props => props.zIndex};
-	top: ${props => props.top};
-	right: ${props => props.right};
-	bottom: ${props => props.bottom};
-	left: ${props => props.left};
+	${bgColor};
+	${bg};
+	${bgAttachment};
+	${bgBlendMode};
+	${bgClip};
+	${bgImg};
+	${bgOrigin};
+	${bgPosition};
+	${bgRepeat};
+	${bgSize};
+	${alignContent};
+	${alignItems};
+	${alignSelf};
+	${color};
+	${display};
+	${height};
+	${minHeight};
+	${overflow};
+	${justifyContent};
+	${position};
+	${textAlign};
+	${width};
+	${zIndex};
+	${top};
+	${right};
+	${bottom};
+	${left};
 	${spacingSizes};
 	${borderOptions};
 `
